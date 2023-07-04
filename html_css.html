@@ -29,22 +29,63 @@
             /*bottom-style escolhe o estilo da borda de baixo */
             border-bottom-color: #c2bf26;
             /*bottom direção de baixo da borda */
-            border-bottom-width: 5px;/*bottom-widht escolhe o tamanho da borda de baixo */
+            border-bottom-width: 5px;
+            /*bottom-widht escolhe o tamanho da borda de baixo */
             /*border-bottom: solid #c2bf26 5px;*/
             padding-bottom: 8px;
             color: #c2bf26;
-            text-shadow: black 5px 10px 5px;/*a shadow tem valores sendo eles
-             1ºdeslocamento 2ºprofundidade 3ºtranparencia da sobra*/ /* e quando usamos o - no valores px ele coloca a sobra em cima*/
+            text-shadow: black 5px 10px 5px;
+            /*a shadow tem valores sendo eles
+             1ºdeslocamento 2ºprofundidade 3ºtranparencia da sobra*/
+            /* e quando usamos o - no valores px ele coloca a sobra em cima*/
         }
-hr{
-            width: 70px;
+
+        hr {
+            width: 70%;
             margin: auto;
             height: 15px;
             background-color: orange;
             border: none;
             border-radius: 5px;
-            box-shadow: black 1px 1px 5px inset; /*inverte a sombra para dentro*/
-        }        
+            box-shadow: black 1px 1px 5px inset;
+            /*inverte a sombra para dentro*/
+        }
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            text-align: justify;
+            letter-spacing: 2px;
+            /*letter-spacing usado para da um espaço entra as palavras*/
+        }
+
+        li {
+            background-color: rgb(202, 124, 124);
+            list-style: circle;
+        }
+
+        #destaque {
+            background-color: #f5deb3;
+            border: solid rgb(250, 152, 114);
+        }
+
+        img {
+            width: 250px;
+            height: 157px;
+            border-radius: 20px;
+        }
+
+        #centro {
+            text-align: center;
+        }
+        .desck{
+            background-color: goldenrod;
+            padding: 8px; border-radius: 20px;
+        }
+        .arredpondada{
+            border-radius: 20px;
+        }
     </style>
 </head>
 
@@ -62,14 +103,15 @@ hr{
     <p>Abaixo você encontra uma lista com alguns programas utilizados
         para o desenvolvimento de sites:</p>
     <ul>
-        <li class="" id="unico">Brackets</li>
+        <li id="destaque">Brackets</li>
         <li class="">Notepad++</li>
         <li class="">Sublime</li>
         <li class="">Dreamweaver</li>
     </ul>
     <hr>
     <h2>Desenvolvido de acordo com os Padrões Web.</h2>
-<p><img src="imagem/chapeleiro.jpg" alt="chapeleiro"></p>
+    <p class="desck arredondada">Desenvolvido de acordo com os Padrões Web.</p>
+    <p id="centro" class="arredondada"><img src="imagem/chapeleiro.jpg" alt="chapeleiro"></p>
 </body>
 
 
