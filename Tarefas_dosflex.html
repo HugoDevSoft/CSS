@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="uft-8">
+    <title>Tarefas_dosflex</title>
+    <style>
+        h1, p {
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            gap: 5px;
+            padding: 10px;
+            align-items: center;
+            width: 100%;
+            min-height: 120px;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 13px;
+            flex-wrap: wrap;
+
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border: solid white 1px;
+            border-radius: 3px;
+        }
+
+        .errada:hover {
+            border: solid white 2px;
+            /*Comportamento ao passar o mouse sobre */
+        }
+
+        .errada:active {
+            border: solid red 8px;
+        }
+
+        #certa:active {
+            border: solid greenyellow 8px;
+            /*Comportamento de link quando está clicando ou ativo*/
+        }
+
+        .um {
+            border: solid black 1px;
+            width: 130px;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10px;
+            box-shadow: gray 6px -8px 5px;
+        }
+
+        .comofazer {
+            text-decoration: none;
+            background-color: gray;
+            border-radius: 3px;
+            border: solid black 1px;
+            color: black;
+
+        }
+
+        .comofazer:hover {
+            background-color: orange;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Clique na imagem correta</h1>
+        <p>Qual destas imagens não faz parte de esporte?</p>
+        <section>
+            <div><img src="imagem/baseballll.jpg" alt="baseballll" class="errada"></div>
+            <div><img src="imagem/fut-de-praia.jpg" alt="fut de praia" class="errada"></div>
+            <div><img src="imagem/biribol.jpg" alt="biribol" class="errada"></div>
+            <div><img src="imagem/chapeleiro.jpg" alt="chapeleiro" class="errada" id="certa"></div>
+        </section>
+        <hr><br><br>
+
+        <nav>
+            <div class="um"><img src="imagem/jogo-de-fresco.jpg" alt="jogo-de-fresco">
+                <p><b>Item</b></p>
+                <p>Descrição do item</p>
+                <p><a class="comofazer" href="#">Acesse</a></p>
+            </div>
+
+            <div class="um"><img src="imagem/jogo-de-fresco.jpg" alt="jogo-de-fresco">
+                <p><b>Item</b></p>
+                <p>Descrição do item</p>
+                <p><a class="comofazer" href="#">Acesse</a></p>
+            </div>
+
+            <div class="um"><img src="imagem/jogo-de-fresco.jpg" alt="jogo-de-fresco">
+                <p><b>Item</b></p>
+                <p>Descrição do item</p>
+                <p><a class="comofazer" href="#">Acesse</a></p>
+            </div>
+        </nav>
+</body>
+
+</html>
